@@ -46,6 +46,7 @@ resourcePolicy:
       condition:
         match:
           expr: request.resource.attr.ownerId == request.principal.id
+          expr: request.resource.attr.ownerId == request.principal.id
 
   schemas:
     principalSchema:
