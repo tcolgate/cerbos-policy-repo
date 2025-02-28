@@ -6,6 +6,7 @@ resourcePolicy:
 
   # This resource file is reviewed for when checking permissions when a resource
   # is of `kind` "basicResource"
+  # things
   resource: basicResource
 
   rules:
