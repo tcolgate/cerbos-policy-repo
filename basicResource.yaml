@@ -43,19 +43,6 @@ resourcePolicy:
               - expr: request.resource.attr.ownerId == request.principal.id
               - expr: request.resource.attr.ownerId == request.principal.id
               - expr: request.resource.attr.ownerId == request.principal.id
-
-    - actions:
-        - read
-      effect: EFFECT_DENY
-      roles:
-        - USER
-      condition:
-        match:
-          any:
-            of:
-              - expr: request.resource.attr.isPublished == false
-              - expr: request.resource.attr.ownerId == request.principal.id
-              - expr: request.resource.attr.ownerId == request.principal.id
               - expr: request.resource.attr.ownerId == request.principal.id
 
     # Only the owner of the resource can update or delete it
