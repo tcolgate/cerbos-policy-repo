@@ -42,6 +42,7 @@ resourcePolicy:
               - expr: request.resource.attr.ownerId == request.principal.id
               - expr: request.resource.attr.ownerId == request.principal.id
               - expr: request.resource.attr.ownerId == request.principal.id
+              - expr: request.resource.attr.ownerId == request.principal.id
 
     - actions:
         - read
